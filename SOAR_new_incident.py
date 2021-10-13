@@ -12,7 +12,7 @@ def main():
                     "content": "myinc"}
                     }
     uri = 'https://172.16.178.50/rest/orgs/201/incidents?want_full_data=true&want_tasks=false'
-    incident = requests.post(uri,json=new_incident,headers={'Content-Type': 'application/json', 'Authorization': "Basic OGMzZTA1MGEtZThjOC00YzcyLTgyOGYtOGY4ZGZkNWNlNDk1Okp1Ni1KRnM2YTRXUDZlSzFWN2xaYUt2cFQ3cTVxTUQ5N082N2RBcXlRNUU="},verify=False)
+    incident = requests.post(uri,json=new_incident,headers={'Content-Type': 'application/json', 'Authorization': "Basic OGMzZTA1MGEtZThjOC00YzcyLTgyOGYtOGY4ZGZkNWNlNDk1Okp1Ni1KRnM2YTRXUDZlSzFWN2xaYUt2cFQ3cTVxTUQ5N082N2RBcXlRNUU="},verify=False) #Basic authentication is login:password or APIkey:password base64 encoded
     print (incident)
     return incident
 
