@@ -46,7 +46,7 @@ def my_form_post():
       "description": inc_text,
       "discovered_date": time_now,
       "incident_type_ids": inc_type,
-      "properties": {"submitter_name":name},
+      "properties": {"submitter_name":name} #This is a custom field and you have to create it in SOAR or comment\delete
   }
 
   client.post("/incidents/", incident)
